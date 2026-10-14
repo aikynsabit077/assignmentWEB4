@@ -1,0 +1,138 @@
+
+/* General page style */
+body {
+    background: linear-gradient(135deg, #edf3fa, #f7f9fc);
+    color: #263449;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #203b5c;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.container > p {
+    font-size: 16px;
+}
+
+.form-section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 32px;
+    border: 1px solid #e1e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(35, 60, 90, 0.06);
+    transition: box-shadow 0.2s ease;
+}
+
+.form-section:hover {
+    box-shadow: 0 12px 30px rgba(35, 60, 90, 0.10);
+}
+
+.form-section h2 {
+    color: #315b82;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #edf1f6;
+}
+
+.form-label {
+    color: #34445a;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #d7e0eb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    background-color: #fbfcfe;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #5b9bd5;
+    box-shadow: 0 0 0 3px rgba(91, 155, 213, 0.15);
+    background-color: #ffffff;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-weight: 600;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #315b82;
+    border-color: #315b82;
+}
+
+.btn-primary:hover {
+    background-color: #244564;
+    border-color: #244564;
+    transform: translateY(-1px);
+}
+
+.btn-outline-secondary:hover {
+    transform: translateY(-1px);
+}
+
+.form-text {
+    color: #748196;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .form-section {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .form-section h2 {
+        font-size: 20px;
+    }
+}
+
+.form-section input:not(:placeholder-shown):valid ~ .valid-feedback {
+    display: block;
+}
+
+.form-section input:not(:placeholder-shown):invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.form-section input:not(:placeholder-shown):valid {
+    border-color: #198754;
+}
+
+.form-section input:not(:placeholder-shown):invalid {
+    border-color: #dc3545;
+}
+
+.form-section select:valid ~ .valid-feedback {
+    display: block;
+}
+
+.form-section select:invalid ~ .invalid-feedback {
+    display: block;
+}
+
