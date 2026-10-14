@@ -45,8 +45,8 @@ During this assignment, I practiced creating HTML forms, using HTML5 validation 
 
 ## GitHub
 
-[Add your GitHub repository link here]
+(https://github.com/aikynsabit077/assignmentWEB4)
 
 ## Link to Website
 
-[Add your GitHub Pages link here, if available]
+(https://aikynsabit077.github.io/assignmentWEB4/)
